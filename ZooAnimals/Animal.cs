@@ -31,11 +31,9 @@ namespace ZooAnimals
 
         public abstract void EmitSound();
 
-        public void ShowInfo()
+        public override string ToString()
         {
-            Console.WriteLine("\nName: " + this.Name);
-            Console.WriteLine("Age: " + this.Age);
-            this.EmitSound();
+            return $"Name: {this.Name}\nAge: {this.Age}";
         }
     }
 }

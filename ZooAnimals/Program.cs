@@ -76,5 +76,6 @@ for (int i = 0; i < numAnimals; i++)
 
 for (int i = 0; i < numAnimals; i++)
 {
-    animals[i].ShowInfo();
+    Console.WriteLine(animals[i].ToString());
+    animals[i].EmitSound();
 }
